@@ -128,8 +128,44 @@ export default function Calculator() {
           <p className="text-lg">
             {t('about.imaginaryUnit')}
           </p>
+
+          <h4 className="text-xl font-semibold mt-8 mb-2">{t('about.factorization.title')}</h4>
+          <p className="text-lg">
+            {t('about.factorization.difference')}
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-lg">
+            <li>{t('about.factorization.example1')}</li>
+            <li>{t('about.factorization.example2')}</li>
+            <li>{t('about.factorization.example3')}</li>
+          </ul>
+
+          <h4 className="text-xl font-semibold mt-8 mb-2">{t('about.algorithm.title')}</h4>
+          <p className="text-lg">
+            {t('about.algorithm.description')}
+          </p>
+          <ul className="list-none space-y-2 text-lg">
+            <li>{t('about.algorithm.step1')}</li>
+            <li>{t('about.algorithm.step2')}</li>
+            <li>{t('about.algorithm.step3')}</li>
+            <li>{t('about.algorithm.step4')}</li>
+            <li>{t('about.algorithm.step5')}</li>
+          </ul>
         </div>
       </motion.div>
+
+      <footer className="mt-8 text-center text-gray-600 text-sm">
+        <p>{t('footer.copyright')}</p>
+        <div className="mt-2 space-x-4">
+          <a
+            href="https://github.com/soutahub/gaussian-integer-factorization"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-900"
+          >
+            {t('footer.source')}
+          </a>
+        </div>
+      </footer>
     </>
   );
 } 

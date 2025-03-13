@@ -68,6 +68,22 @@ function isGaussianPrime(g: GaussianInteger): boolean {
     return isPrime(norm);
 }
 
+// 素因数の出現回数をカウントして指数表記に変換する関数
+function compressFactors(factors: string[]): string[] {
+    const count = new Map<string, number>();
+    
+    // 各因数の出現回数をカウント
+    for (const factor of factors) {
+        count.set(factor, (count.get(factor) || 0) + 1);
+    }
+
+    // 指数表記に変換
+    return Array.from(count.entries()).map(([factor, power]) => {
+        if (power === 1) return factor;
+        return `(${factor})^${power}`;
+    });
+}
+
 // 与えられた整数をガウス整数として素因数分解
 export function factorizeGaussianInteger(n: number): string[] {
     // 整数以外の入力をチェック
@@ -136,5 +152,8 @@ export function factorizeGaussianInteger(n: number): string[] {
         }
     }
 
-    return factors.map(f => f.toString());
+    const result = factors.map(f => f.toString());
+    
+    // 結果を指数表記に変換して返す
+    return compressFactors(result);
 } 
