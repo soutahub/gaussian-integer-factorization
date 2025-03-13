@@ -1,0 +1,29 @@
+{
+  "title": "Gaussian Integer Factorization",
+  "description": "Calculate the prime factorization of Gaussian integers, a special type of complex numbers.",
+  "input": {
+    "label": "Enter a Rational Integer",
+    "placeholder": "e.g., 5",
+    "button": "Calculate"
+  },
+  "calculate": "Calculate",
+  "result": {
+    "title": "Result",
+    "factorization": "Prime Factorization",
+    "norm": "Norm"
+  },
+  "error": {
+    "invalid": "Please enter a rational integer.",
+    "notGaussian": "The input is not a Gaussian integer."
+  },
+  "about": {
+    "title": "What are Gaussian Integers?",
+    "description": "Gaussian integers are complex numbers whose real and imaginary parts are both integers.",
+    "formal": "Formally, they are expressed as:",
+    "imaginaryUnit": "where i is the imaginary unit (i² = -1)."
+  },
+  "language": {
+    "en": "English",
+    "ja": "日本語"
+  }
+} 

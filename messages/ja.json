@@ -1,0 +1,29 @@
+{
+  "title": "ガウス整数の素因数分解",
+  "description": "複素数の一種であるガウス整数の素因数分解を計算します。",
+  "input": {
+    "label": "有理整数を入力",
+    "placeholder": "例: 5",
+    "button": "計算する"
+  },
+  "calculate": "計算する",
+  "result": {
+    "title": "結果",
+    "factorization": "素因数分解",
+    "norm": "ノルム"
+  },
+  "error": {
+    "invalid": "無効な入力です。有理整数を入力してください。",
+    "notGaussian": "入力された数値はガウス整数ではありません。"
+  },
+  "about": {
+    "title": "ガウス整数とは？",
+    "description": "ガウス整数とは、実部と虚部が共に整数である複素数のことです。",
+    "formal": "形式的には次のように表されます：",
+    "imaginaryUnit": "ここで、iは虚数単位（i² = -1）を表します。"
+  },
+  "language": {
+    "en": "English",
+    "ja": "日本語"
+  }
+} 
