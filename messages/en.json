@@ -28,15 +28,6 @@
       "example1": "2 is prime in rational integers but factors as (1+i)(1-i) in Gaussian integers.",
       "example2": "A prime p ≡ 1 (mod 4) can be factored into two Gaussian primes.",
       "example3": "A prime p ≡ 3 (mod 4) remains prime in Gaussian integers."
-    },
-    "algorithm": {
-      "title": "Implementation Details",
-      "description": "This application uses the following algorithm:",
-      "step1": "1. Treat the input integer n as a Gaussian integer.",
-      "step2": "2. Calculate its norm N(n).",
-      "step3": "3. Factor N(n) as a rational integer.",
-      "step4": "4. Find corresponding Gaussian primes for each prime factor.",
-      "step5": "5. Finally, multiply all factors to get the result."
     }
   },
   "language": {
@@ -44,7 +35,7 @@
     "ja": "Japanese"
   },
   "footer": {
-    "copyright": "© 2024 soutahub. All rights reserved.",
+    "copyright": "© 2025 SoutaHub. All rights reserved.",
     "source": "Source Code",
     "algorithm": "Algorithm Details"
   }

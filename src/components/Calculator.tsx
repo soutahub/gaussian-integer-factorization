@@ -138,18 +138,6 @@ export default function Calculator() {
             <li>{t('about.factorization.example2')}</li>
             <li>{t('about.factorization.example3')}</li>
           </ul>
-
-          <h4 className="text-xl font-semibold mt-8 mb-2">{t('about.algorithm.title')}</h4>
-          <p className="text-lg">
-            {t('about.algorithm.description')}
-          </p>
-          <ul className="list-none space-y-2 text-lg">
-            <li>{t('about.algorithm.step1')}</li>
-            <li>{t('about.algorithm.step2')}</li>
-            <li>{t('about.algorithm.step3')}</li>
-            <li>{t('about.algorithm.step4')}</li>
-            <li>{t('about.algorithm.step5')}</li>
-          </ul>
         </div>
       </motion.div>
 
