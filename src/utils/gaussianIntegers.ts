@@ -80,7 +80,7 @@ function compressFactors(factors: string[]): string[] {
     // 指数表記に変換
     return Array.from(count.entries()).map(([factor, power]) => {
         if (power === 1) return factor;
-        return `(${factor})^${power}`;
+        return `${factor}^${power}`;
     });
 }
 
